@@ -1,11 +1,12 @@
-print "Thtring, pleathe!: "
+print "Enter something: "
 user_input = gets.chomp
 user_input.downcase!
 
 if user_input.include? "s"
   user_input.gsub!(/s/, "th")
+  #print user_input
 else
-  puts "Nothing to do here!"
+  puts "There is no 's' in the input you silly little goose!!"
 end
-  
-puts "Your string is: #{user_input}"
+
+puts "The final string is as such: #{user_input}"
