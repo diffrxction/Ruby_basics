@@ -19,7 +19,7 @@ This is also inserted in the block.
 We're back in the method!
 =end
 
-#------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------
 
 def yield_name(name)
   puts "In the method! Let's yield."
@@ -53,3 +53,12 @@ In between the yields!
 My name is Aryan and I work desperately so that one day I can live my dreams.
 Block complete! Back in the method.
 =end
+#----------------------------------------------------------------------------------------------------------------------------
+#yield function to double numbers
+def double(num)
+  yield(num)
+end
+
+double(16) {|x| puts x * 2}
+#OUTPUT:
+#32
