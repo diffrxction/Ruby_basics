@@ -12,3 +12,14 @@ end
 =end
 age = 22
 puts age.respond_to?(:next)
+=begin
+The code below is another way of implementing the .push or += on an object.
+=end
+alphabet = ["a", "b", "c"]
+alphabet << "d"
+caption = "A giraffe surrounded by "
+caption << "weezards!"
+=begin
+Ternary operator
+=end
+puts 1 < 2 ? "One is less than two!" : "One is not less than two."
